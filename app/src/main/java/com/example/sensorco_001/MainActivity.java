@@ -3,9 +3,11 @@ package com.example.sensorco_001;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.MenuInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupMenu;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //hacer magoia para validar T0D0 lo validable....
+                setContentView(R.layout.principal);
+
             }
         });
 
@@ -40,4 +44,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void showPopup(View v) {
+        PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.menu1, popup.getMenu());
+        popup.show();
+    }
+
 }
