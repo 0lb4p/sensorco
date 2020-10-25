@@ -10,7 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnLogin, btnSignup;
-    private EditText etEmail, etPassword;
+    private EditText etUsername, etPassword;
     private DatabaseHelper databaseHelper;
 
     @Override
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnLogin = (Button) findViewById(R.id.btnLogin);
         btnSignup = (Button) findViewById(R.id.btnSignup);
-        etEmail = (EditText) findViewById(R.id.etEmail);
+        etUsername = (EditText) findViewById(R.id.etUsername);
         etPassword = (EditText) findViewById(R.id.etPassword);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {

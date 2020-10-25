@@ -27,6 +27,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(CREATE_TABLE_USER);
+        ContentValues values = new ContentValues();
+
+        values.put(KEY_ID, "0");
+        values.put(KEY_USERNAME, "admin");
+        values.put(KEY_PASSWORD, "admin");
     }
 
     @Override

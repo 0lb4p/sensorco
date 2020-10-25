@@ -2,6 +2,6 @@
     <string name="app_name">Sensor CO</string>
     <string name="password">Contraseña</string>
     <string name="confPassword">Confirmar contraseña</string>
-    <string name="correo">Correo electronico</string>
+    <string name="correo">Usuario</string>
 
 </resources>
